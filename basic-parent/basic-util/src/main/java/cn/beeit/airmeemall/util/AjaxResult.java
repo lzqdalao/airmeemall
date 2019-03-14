@@ -1,15 +1,24 @@
-package cn.beeit.airmeemall.util;/*
- * @Author li zhen qiang
- * @Description: ajax请求返回结果类
- * @Date 2019/1/27
- * @Version 1.0
- * @ClassName: AjaxResult
- **/
+package cn.beeit.airmeemall.util;
 
+/**
+ * @author yaohuaipeng
+ * @date 2018/10/15-16:50
+ */
 public class AjaxResult {
-    private Boolean success =true;
-    private String message;
-    private Object returnObj;
+    private Boolean success = true;
+    private String message = "操作成功";
+    private Object retObj = null;
+
+    public static AjaxResult me(){
+        return new AjaxResult();
+    }
+
+    public AjaxResult() {
+    }
+
+    public AjaxResult(String message) {
+        this.message = message;
+    }
 
     public Boolean getSuccess() {
         return success;
@@ -29,23 +38,12 @@ public class AjaxResult {
         return this;
     }
 
-    public Object getReturnObj() {
-        return returnObj;
+    public Object getRetObj() {
+        return retObj;
     }
 
-    public AjaxResult setReturnObj(Object returnObj) {
-        this.returnObj = returnObj;
+    public AjaxResult setRetObj(Object retObj) {
+        this.retObj = retObj;
         return this;
-    }
-    public static AjaxResult me(){
-        return new AjaxResult();
-    }
-    public AjaxResult() {
-    }
-
-    public AjaxResult(Boolean success, String message, Object returnObj) {
-        this.success = success;
-        this.message = message;
-        this.returnObj = returnObj;
     }
 }

@@ -6,21 +6,35 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="airmeemall-generator" />
         <module name="basic-util" />
+        <module name="common-interface" />
+        <module name="common-service" />
+        <module name="config-server-1299" />
         <module name="ereka-server-7001" />
         <module name="plat-interface" />
         <module name="plat-service" />
+        <module name="product-interface" />
+        <module name="product-service" />
         <module name="zuul-gateway-9527" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="airmeemall-common" target="1.8" />
+      <module name="airmeemall-generator" target="1.8" />
       <module name="airmeemall-parent" target="1.8" />
       <module name="airmeemall-plat-parent" target="1.8" />
+      <module name="airmeemall-product-parent" target="1.8" />
       <module name="basic-parent" target="1.8" />
       <module name="basic-util" target="1.8" />
+      <module name="common-interface" target="1.8" />
+      <module name="common-service" target="1.8" />
+      <module name="config-server-1299" target="1.8" />
       <module name="ereka-server-7001" target="1.8" />
       <module name="plat-interface" target="1.8" />
       <module name="plat-service" target="1.8" />
+      <module name="product-interface" target="1.8" />
+      <module name="product-service" target="1.8" />
       <module name="zuul-gateway-9527" target="1.8" />
     </bytecodeTargetLevel>
   </component>

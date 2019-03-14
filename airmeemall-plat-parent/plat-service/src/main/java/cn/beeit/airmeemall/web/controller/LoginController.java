@@ -19,7 +19,7 @@ public class LoginController {
     @RequestMapping(value = "/login",method = RequestMethod.POST)
     public AjaxResult login(@RequestBody Employee employee){
         if("admin".equals(employee.getUsername()) && "123456".equals(employee.getPassword())){
-            return AjaxResult.me().setSuccess(true).setMessage("登陆成功!!");
+            return AjaxResult.me().setSuccess(true).setMessage("登陆成功!!").setRetObj(employee);
         }else{
             return AjaxResult.me().setSuccess(false).setMessage("用户名或密码错误!!!");
         }
